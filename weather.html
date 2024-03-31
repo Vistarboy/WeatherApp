@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather</title>
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+  <div class="topbar">
+    <p class="header">WorldWeather</p>
+    <div class="search-div">
+      <input type="text"  id="input-value" placeholder="Enter City/ country/ districts....">
+      <button id="search-button"><p class="search-icon">&#9906</p></button>
+    </div>
+  </div>
+  <div class="container">
+    <div id="left">
+      <div class="label">
+        <p id="name">City, Country</p>
+          <div id="coordinates-div">
+            <p id="long">Longitute: </p>
+            <p id="lat">Latitude: </p>
+          </div>
+          <div id="sunTime-div">
+            <div class="sunrise-div">
+              <p>Sunrise Time:</p>
+              <p class="sunrise-data">sunrise time</p>
+            </div>
+            <div class="sunset-div">
+              <p>Sunset Time:</p>
+              <p class="sunset-data">sunset time</p>
+            </div>
+          </div>
+      </div>
+      <div class="label">
+        <p id="timezone">Timezone:</p>
+        <p id="timezone-data">offset hours</p>
+      </div>
+      <div class="label">
+        <div class="date-div">
+          <p class="date">Date:</p>
+          <p class="date-data">date</p>
+        </div>
+        <div class="time-div"> 
+          <p class="time">Current Time:</p>
+          <p class="time-data">timeRecorded</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="right">
+      <div id="info">
+        <div id="major-data">
+          <div id="temperature-div">
+            <P id="temperature">tmp&#8451</P>
+          </div>
+          <div id="condition-div">
+            <p id="condition">Mainly:condition</p>
+            <p id="description">Description:condition description</p>
+          </div>
+        </div>
+        <div id="minor-data">
+          <div>
+            <p>Cloud &#9729</p>
+            <p id="cloudCover">percent</p>
+          </div>
+          <div>
+            <p>Pressure</p>
+            <p id="pressure">23</p>
+          </div>
+          <div>
+            <p>Humidity</p>
+            <p id="humidity">humidity</p>
+          </div>
+          <div>
+            <p>Visibility</p>
+            <p id="visibility">distance</p>
+        </div>
+      </div>
+
+      <div class="wind">
+        <p class="wind-title">Wind Status:</p>
+
+        <div class="wind-data">
+          <div class="speed">
+            <p>Speed</p>
+            <p class="speed-d">m/s</p>
+          </div>
+          <div class="degree">
+            <p>Direction</p>
+            <p class="degree-d">angle</p>
+          </div>
+          <div class="gust">
+            <p>gust</p>
+            <p class="gust-d">m/s</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <script src="weather.js"></script>
+</body>
+</html>
