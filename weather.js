@@ -55,8 +55,7 @@ search.onclick = ()=>{
 getWeather(url)
 
 function getWeather(url){
-    fetch(url).then(response => response.json()).then(data=>{ 
-        console.log(data);
+    fetch(url).then(response => response.json()).then(data=>{
     Display.city.innerHTML = `${data.name}, ${data.sys.country}`;
 
     Display.location.longitude.innerHTML = `Longitude:${Math.round(data.coord.lon)}`
