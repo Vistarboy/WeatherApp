@@ -38,7 +38,7 @@ const Display = {
 }
 
 
-let url = `http://api.openweathermap.org/data/2.5/weather?q=Dar es salaam&appid=${api_key}`
+let url = `https://api.openweathermap.org/data/2.5/weather?q=Dar es salaam&appid=${api_key}`
 
 const search = document.getElementById('search-button')
 
@@ -47,7 +47,7 @@ const InputValue = document.getElementById('input-value')
 search.onclick = ()=>{
   CityName = InputValue.value
 
-  url = `http://api.openweathermap.org/data/2.5/weather?q=${CityName}&appid=${api_key}`
+  url = `https://api.openweathermap.org/data/2.5/weather?q=${CityName}&appid=${api_key}`
 
   getWeather(url)
 }
