@@ -85,6 +85,7 @@ function getWeather(url){
     Display.Weather.minor.innerHTML = `Description: ${data.weather[0].description}`;
 
     }).catch(error =>{
+      alert(`No results found for ${InputValue.value}`);
       console.error("Error fetching Weather",error)
     })
 }
